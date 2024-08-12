@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="image-section">
-      <img src="@/img/fondo.jpg" alt="Logo Bicicleta">
+      <img src="@/img/image.avif" alt="Logo Bicicleta">
     </div>
     <div class="login-section">
       <div class="logo">
@@ -11,8 +11,8 @@
       <form @submit.prevent="register">
         <div class="name-group">
           <div class="input">
-            <label for="nombreUsuario">Nombre <span class="required">*</span></label>
-            <input id="nombreUsuario" type="text" placeholder="Nombre" required v-model="form.nombreUsuario">
+            <label for="nombreUsuario">Nombres <span class="required">*</span></label>
+            <input id="nombreUsuario" type="text" placeholder="Nombres" required v-model="form.nombreUsuario">
           </div>
           <div class="input">
             <label for="apellidoUsuario">Apellidos <span class="required">*</span></label>
@@ -32,21 +32,24 @@
             required 
             v-model="form.contrasenaUsuario"
           />
-          <button type="button" @click="togglePassword" class="password-toggle">
+          <span type="button" @click="togglePassword" class="password-toggle">
             <i :class="passwordVisible ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
-          </button>
+          </span>
         </div>
         <div class="input">
           <label for="telefonoUsuario">Teléfono <span class="required">*</span></label>
-          <input id="telefonoUsuario" type="number" placeholder="Teléfono" required v-model="form.telefonoUsuario">
+          <input id="telefonoUsuario" type="tel" placeholder="Teléfono" required v-model="form.telefonoUsuario">
         </div>
         <div class="input">
           <label for="fechaNacimientoUsuario">Fecha de Nacimiento <span class="required">*</span></label>
           <input id="fechaNacimientoUsuario" type="date" placeholder="Fecha de Nacimiento" required v-model="form.fechaNacimientoUsuario">
         </div>
         <button type="submit" class="custom-btn">Registrarse</button>
+
         <router-link to="/" class="register-link">
-          <i></i> <span class="register-button">Iniciar Sesión</span>
+        <span class="none">¿Ya estas registrado? </span>
+          
+         <span class="register-button">Iniciar Sesión</span>
         </router-link>
       </form>
     </div>

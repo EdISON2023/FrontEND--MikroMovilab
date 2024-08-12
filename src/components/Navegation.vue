@@ -114,10 +114,11 @@ body {
 
 .sidebar {
   flex: 0 0 215px;
-  background-color: #124354;
+  background-color:  rgb(31 41 55);
   padding-top: 25px;
   transition: width 0.3s ease, left 0.3s ease;
   overflow: hidden;
+  
 }
 
 .sidebar-collapsed {
@@ -126,7 +127,7 @@ body {
 
 .logo {
   text-align: center;
-  padding-bottom: 20px;
+  padding-right: 20px;
 }
 
 .logo h1 {
@@ -138,14 +139,14 @@ body {
 
 .logo .mikro {
   font-weight: bold;
-  color: rgb(255, 255, 255); 
+  color: #13d19b; 
   font-size: 1em;
   display: block;
   line-height: 0.8em;
 }
 
 .logo .movilab {
-  color: rgb(182, 234, 183); 
+  color:gray; 
   font-size: 1em;
   display: block;
   margin-left:60px; 
@@ -154,14 +155,14 @@ body {
 
 .logo .mikro-collapsed {
   font-weight: bold;
-  color: rgb(248, 248, 248); 
+  color: #13d19b; 
   font-size: 1.2em;
   display: block;
   line-height: 0.8em;
 }
 
 .logo .movilab-collapsed {
-  color: rgb(137, 226, 144); /* Gris */
+  color: gray; /* Gris */
   font-size: 1.2em;
   display: block;
 }

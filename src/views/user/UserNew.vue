@@ -10,18 +10,16 @@
         </div>
         <div class="profile-details">
             <span>{{ user.nombre }} </span>
-            <span>{{ user.apellido }}</span>
-           
           <p>Administrador{{ user.rol }} </p>
         </div>
       </div>
       <div class="additional-info">
         <div class="info-item">
-          <span>Nombre</span>
+          <span>Nombres</span>
           <p>{{ user.nombre }}</p>
         </div>
         <div class="info-item">
-          <span>Apellido</span>
+          <span>Apellidos</span>
           <p>{{ user.apellido }}</p>
         </div>
         <div class="info-item">

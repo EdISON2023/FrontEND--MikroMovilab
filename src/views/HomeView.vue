@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="image-section">
-      <img src="@/img/fondo.jpg" alt="Logo Bicicleta">
+      <img src="@/img/image.avif" alt="Logo Bicicleta">
     </div>
     <div class="login-section">
       <div class="logo">
@@ -28,14 +28,13 @@
             required
             v-model="form.contrasenaUsuario"
           />
-          <button type="button" @click="togglePassword" class="password-toggle">
+          <span type="button" @click="togglePassword" class="password-toggle">
             <i :class="passwordVisible ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
-          </button>
+          </span>
         </div>
         <button type="submit">Iniciar Sesión</button>
         <div class="register-link">
-          <p>¿Eres nuevo usuario?</p>
-          <router-link to="/register"> <i></i> Regístrate </router-link>
+          <p>¿Eres nuevo usuario?  <router-link to="/register"> <i></i> Regístrate </router-link></p>
         </div>
       </form>
     </div>
@@ -89,16 +88,6 @@ export default {
 
 
 <style scoped>
-/* Estilos CSS del boton */
-button {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
 body {
   margin: 0;
@@ -112,7 +101,7 @@ body {
 
 .container {
   display: flex;
-  width: 100%;
+  width: 90%;
   height: 100vh;
 }
 
@@ -168,9 +157,10 @@ form {
 input {
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #ddd;
+  border: 1px solid #13d19b;
   border-radius: 9px;
-  background-color: #dadada;
+  background-color: #ffff;
+  width: 300px;
 }
 
 .register-link {
@@ -186,14 +176,14 @@ input {
 .register-link a:hover {
   text-decoration: underline;
 }
-/* Estilos CSS del boton */
+
 button {
   margin-top: 10px;
   padding: 10px;
-  background-color: #13d19b;
+  background-color: red;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 55px;
   cursor: pointer;
 }
 </style>

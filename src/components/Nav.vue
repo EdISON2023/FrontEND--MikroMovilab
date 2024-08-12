@@ -56,7 +56,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #124354;
+  background-color: rgb(31 41 55);
   color: #fff;
   padding: 10px;
   border-radius: 10px;

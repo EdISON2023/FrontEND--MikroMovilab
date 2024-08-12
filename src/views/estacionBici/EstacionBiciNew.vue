@@ -1,6 +1,5 @@
 <template>
   <Navegation />
-
   <div class="content">
     <Nav />
     <div class="form-container">
